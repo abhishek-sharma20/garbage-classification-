@@ -95,7 +95,7 @@ export default function Upload() {
         formData.append('image', file)
 
         try {
-            const response = await fetch('http://localhost:3001/predict', {
+            const response = await fetch('http://localhost:8080/predict', {
                 method: 'POST',
                 body: formData,
             })
